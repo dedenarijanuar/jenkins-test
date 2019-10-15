@@ -3,7 +3,7 @@ pipeline {
   stages {
       stage('build'){
         steps{
-          sh 'docker image build -t belanjaquit/testing:1.0.1'
+          sh 'docker image build -t belanjaquit/testing:1.0.1 .'
         }
       }
       stage('login'){
